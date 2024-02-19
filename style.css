@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ffeeee;
+  background: -webkit-linear-gradient(to right, #ddefbb, #ffeeee);
+  background: linear-gradient(to right, #ddefbb, #ffeeee);
+}
+.container {
+  width: 50%;
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 10px;
+}
+.container .user-fields {
+  display: flex;
+  justify-content: center;
+}
+.container .user-fields > input,
+.container .user-fields > button {
+  padding: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.container .user-fields > input {
+  width: 100%;
+}
+.container .user-fields > button {
+  background-color: #ddefbb;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+.weather-data {
+  width: 50%;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.location {
+  position: relative;
+}
+.location > img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+
+.location .region {
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px 10px 10px;
+}
+.location .region > p {
+  padding: 0 5px;
+  font-weight: 600;
+  color: rgb(120, 118, 118);
+}
+.location-parameter .location-para {
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px 10px 10px;
+}
+.location-parameter .location-para > p {
+  padding: 0 5px;
+  font-weight: bolder;
+  color: rgb(120, 118, 118);
+}
+.time,
+.humidity {
+  margin-bottom: 5px;
+}
+.temp-para {
+  display: flex;
+  flex-direction: column;
+}
+.temp-para .celcius {
+  position: fixed;
+  top: 16%;
+  left: 68%;
+}
+
+.temp-para .fahrenheit {
+  position: fixed;
+  top: 20%;
+  left: 68%;
+}
+.current .humidity {
+  position: fixed;
+  top: 18%;
+}
+.temp .temp-para {
+  display: flex;
+  font-size: 13px;
+  justify-content: center;
+  padding: 5px 5px 10px 10px;
+}
+.temp .temp-para > p {
+  padding: 5px 0px 5px 5px;
+  font-weight: bold;
+  color: rgb(120, 118, 118);
+}
+.wind-parameter .wind {
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+.wind-parameter .wind > p {
+  padding: 5px 5px 0px 5px;
+  font-weight: 600;
+  color: rgb(120, 118, 118);
+}
